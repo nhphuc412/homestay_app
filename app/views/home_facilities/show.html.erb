@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @home_facility.home_id %>
+</p>
+
+<p>
+  <strong>Facility:</strong>
+  <%= @home_facility.facility_id %>
+</p>
+
+<%= link_to 'Edit', edit_home_facility_path(@home_facility) %> |
+<%= link_to 'Back', home_facilities_path %>

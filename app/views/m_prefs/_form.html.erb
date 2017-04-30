@@ -1,0 +1,22 @@
+<%= form_for(m_pref) do |f| %>
+  <% if m_pref.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(m_pref.errors.count, "error") %> prohibited this m_pref from being saved:</h2>
+
+      <ul>
+      <% m_pref.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pref_name %>
+    <%= f.text_field :pref_name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pref:</strong>
+  <%= @m_city.pref_id %>
+</p>
+
+<p>
+  <strong>City name:</strong>
+  <%= @m_city.city_name %>
+</p>
+
+<%= link_to 'Edit', edit_m_city_path(@m_city) %> |
+<%= link_to 'Back', m_cities_path %>

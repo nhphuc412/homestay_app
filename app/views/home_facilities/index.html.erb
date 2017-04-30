@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Home Facilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Home</th>
+      <th>Facility</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @home_facilities.each do |home_facility| %>
+      <tr>
+        <td><%= home_facility.home_id %></td>
+        <td><%= home_facility.facility_id %></td>
+        <td><%= link_to 'Show', home_facility %></td>
+        <td><%= link_to 'Edit', edit_home_facility_path(home_facility) %></td>
+        <td><%= link_to 'Destroy', home_facility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Home Facility', new_home_facility_path %>

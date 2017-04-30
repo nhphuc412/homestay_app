@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rule:</strong>
+  <%= @home_rule.rule_id %>
+</p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @home_rule.home_id %>
+</p>
+
+<%= link_to 'Edit', edit_home_rule_path(@home_rule) %> |
+<%= link_to 'Back', home_rules_path %>

@@ -1,0 +1,2 @@
+module HomeTypesHelper
+end

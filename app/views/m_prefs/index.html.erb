@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>M Prefs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pref name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @m_prefs.each do |m_pref| %>
+      <tr>
+        <td><%= m_pref.pref_name %></td>
+        <td><%= link_to 'Show', m_pref %></td>
+        <td><%= link_to 'Edit', edit_m_pref_path(m_pref) %></td>
+        <td><%= link_to 'Destroy', m_pref, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New M Pref', new_m_pref_path %>

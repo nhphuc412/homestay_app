@@ -1,0 +1,2 @@
+module HomeRulesHelper
+end

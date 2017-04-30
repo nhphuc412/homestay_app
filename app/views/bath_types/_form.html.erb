@@ -1,0 +1,22 @@
+<%= form_for(bath_type) do |f| %>
+  <% if bath_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bath_type.errors.count, "error") %> prohibited this bath_type from being saved:</h2>
+
+      <ul>
+      <% bath_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bath_type_name %>
+    <%= f.text_field :bath_type_name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

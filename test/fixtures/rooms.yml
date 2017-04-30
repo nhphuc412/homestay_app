@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_type_id: 1
+  bed_type_id: 1
+  bath_type_id: 1
+  accommodates: 1
+  description: MyString
+  image: MyString
+  price: 1
+  room_name: MyString
+
+two:
+  room_type_id: 1
+  bed_type_id: 1
+  bath_type_id: 1
+  accommodates: 1
+  description: MyString
+  image: MyString
+  price: 1
+  room_name: MyString

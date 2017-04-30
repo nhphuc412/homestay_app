@@ -1,0 +1,27 @@
+<%= form_for(home_facility) do |f| %>
+  <% if home_facility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(home_facility.errors.count, "error") %> prohibited this home_facility from being saved:</h2>
+
+      <ul>
+      <% home_facility.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :home_id %>
+    <%= f.number_field :home_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :facility_id %>
+    <%= f.number_field :facility_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

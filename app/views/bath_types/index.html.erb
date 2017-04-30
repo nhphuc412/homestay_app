@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bath Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bath type name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bath_types.each do |bath_type| %>
+      <tr>
+        <td><%= bath_type.bath_type_name %></td>
+        <td><%= link_to 'Show', bath_type %></td>
+        <td><%= link_to 'Edit', edit_bath_type_path(bath_type) %></td>
+        <td><%= link_to 'Destroy', bath_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bath Type', new_bath_type_path %>
